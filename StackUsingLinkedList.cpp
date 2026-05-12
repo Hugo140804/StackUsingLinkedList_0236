@@ -122,4 +122,8 @@ int main()
         default:
             cout << "Invalid choice, try again" << endl;
         }
+    } while (choice != 4);
 
+    cout << endl;
+    return 0;
+};
