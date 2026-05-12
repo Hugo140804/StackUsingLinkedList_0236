@@ -83,3 +83,5 @@ int main()
     do
     {
         cout << "1. Push\n";
+        cout << "2. Pop\n";
+       
