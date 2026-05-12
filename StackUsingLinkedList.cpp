@@ -85,4 +85,36 @@ int main()
         cout << "1. Push\n";
         cout << "2. Pop\n";
         cout << "3. Peek\n";
-        cout << "4. isEmpty\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            cout << "Enter value to push: ";
+            cin >> value;
+            stack.push(value);
+            break;
+        case 2:
+            stack.pop();
+            break;
+        case 3:
+            stack.peek();
+            break;
+        case 4:
+            if (stack.isEmpty())
+                cout << "Stack is empty" << endl;
+            else
+                cout << "Stack is not empty" << endl;
+            break;
+        case 5:
+            cout << "Exiting..." << endl;
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+        }
+    } while (choice != 5);
+
+    return 0;
+}
