@@ -96,25 +96,3 @@ int main()
             cin >> value;
             stack.push(value);
             break;
-        case 2:
-            stack.pop();
-            break;
-        case 3:
-            stack.peek();
-            break;
-        case 4:
-            if (stack.isEmpty())
-                cout << "Stack is empty" << endl;
-            else
-                cout << "Stack is not empty" << endl;
-            break;
-        case 5:
-            cout << "Exiting..." << endl;
-            break;
-        default:
-            cout << "Invalid choice" << endl;
-        }
-    } while (choice != 5);
-
-    return 0;
-}
