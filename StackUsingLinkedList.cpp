@@ -78,3 +78,8 @@ int main()
     stack stack;
 
     int choice = 0;
+    int value;
+
+    do
+    {
+        cout << "1. Push\n";
